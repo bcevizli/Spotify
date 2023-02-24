@@ -29,6 +29,8 @@
 		EA5D80EB299B8FA7003A3E46 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D80EA299B8FA7003A3E46 /* AudioTrack.swift */; };
 		EA5D80ED299B8FBE003A3E46 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D80EC299B8FBE003A3E46 /* Artist.swift */; };
 		EA5D80EF299BAC97003A3E46 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D80EE299BAC97003A3E46 /* Extensions.swift */; };
+		EAAA1F3329A7A03B000EF8A6 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA1F3229A7A03B000EF8A6 /* AuthResponse.swift */; };
+		EAAA1F3529A8CD24000EF8A6 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA1F3429A8CD24000EF8A6 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		EA5D80EA299B8FA7003A3E46 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		EA5D80EC299B8FBE003A3E46 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		EA5D80EE299BAC97003A3E46 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EAAA1F3229A7A03B000EF8A6 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		EAAA1F3429A8CD24000EF8A6 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				EA5D80E8299B8F92003A3E46 /* Playlist.swift */,
 				EA5D80EA299B8FA7003A3E46 /* AudioTrack.swift */,
 				EA5D80EC299B8FBE003A3E46 /* Artist.swift */,
+				EAAA1F3229A7A03B000EF8A6 /* AuthResponse.swift */,
+				EAAA1F3429A8CD24000EF8A6 /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				EA5D80E9299B8F92003A3E46 /* Playlist.swift in Sources */,
 				EA5D80E3299B8F0A003A3E46 /* AuthManager.swift in Sources */,
 				EA5D80E1299B8ED9003A3E46 /* SearchResultsViewController.swift in Sources */,
+				EAAA1F3329A7A03B000EF8A6 /* AuthResponse.swift in Sources */,
 				EA5D80D7299B8E4F003A3E46 /* WelcomeViewController.swift in Sources */,
 				EA5D80E5299B8F22003A3E46 /* APICaller.swift in Sources */,
 				EA5D80DB299B8E83003A3E46 /* ProfileViewController.swift in Sources */,
@@ -264,6 +271,7 @@
 				EA5D80B2299AB0A5003A3E46 /* AppDelegate.swift in Sources */,
 				EA5D80ED299B8FBE003A3E46 /* Artist.swift in Sources */,
 				EA5D80D1299B8DE3003A3E46 /* LibraryViewController.swift in Sources */,
+				EAAA1F3529A8CD24000EF8A6 /* UserProfile.swift in Sources */,
 				EA5D80EF299BAC97003A3E46 /* Extensions.swift in Sources */,
 				EA5D80DF299B8EB6003A3E46 /* PlaylistViewController.swift in Sources */,
 				EA5D80B4299AB0A5003A3E46 /* SceneDelegate.swift in Sources */,
