@@ -17,20 +17,42 @@ class LibraryViewController: UIViewController {
         scrollView.isPagingEnabled = true
         return scrollView
     }()
+    
+    private let toggleView = LibraryToggleView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        scrollView.delegate = self
+        view.addSubview(toggleView)
+        toggleView.delegate = self
         view.addSubview(scrollView)
         scrollView.contentSize = CGSize(width: view.width*2, height: scrollView.height)
+        scrollView.delegate = self
+
         addChildren()
+        updateButtons()
+        
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         scrollView.frame = CGRect(x: 0, y: view.safeAreaInsets.top+55, width: view.width, height: view.height-view.safeAreaInsets.top-view.safeAreaInsets.bottom-55)
+        
+        toggleView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: 200, height: 55)
     }
+    
+    private func updateButtons() {
+        switch toggleView.state {
+        case .playlist:
+            navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        case .album:
+            navigationItem.rightBarButtonItem = nil
+        }
+    }
+    @objc private func didTapAdd() {
+        playlistsVC.showCreatePlaylistAlert()
+    }
+    
     private func  addChildren() {
         addChild(playlistsVC)
         scrollView.addSubview(playlistsVC.view)
@@ -45,7 +67,26 @@ class LibraryViewController: UIViewController {
 
 }
 extension LibraryViewController: UIScrollViewDelegate {
-    func scrollViewDidScrolltoTop(_ scrollView: UIScrollView) {
-        
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.x >= (view.width-100) {
+            toggleView.update(for: .album)
+            updateButtons()
+        } else {
+            toggleView.update(for: .playlist)
+            updateButtons()
+        }
     }
+}
+extension LibraryViewController: LibraryToggleViewDelegate {
+    func librayToggleViewDidTapPlaylists(_ toggleView: LibraryToggleView) {
+        scrollView.setContentOffset(.zero, animated: true)
+        updateButtons()
+    }
+    
+    func librayToggleViewDidTapAlbums(_ toggleView: LibraryToggleView) {
+            scrollView.setContentOffset(CGPoint(x: view.width, y: 0), animated: true)
+        updateButtons()
+    }
+    
+    
 }
