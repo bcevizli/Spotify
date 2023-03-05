@@ -178,10 +178,19 @@ final class AuthManager {
         task.resume()
     }
     private func cacheToken(result: AuthResponse) {
-        UserDefaults.standard.set(result.access_token, forKey: "access_token")
+        UserDefaults.standard.setValue(result.access_token, forKey: "access_token")
         if let refresh_token = result.refresh_token {
-            UserDefaults.standard.set(result.refresh_token, forKey: "refresh_token")
+            UserDefaults.standard.setValue(refresh_token, forKey: "refresh_token")
         }
-        UserDefaults.standard.set(Date().addingTimeInterval(TimeInterval(result.expires_in)), forKey: "expirationDate")
+        UserDefaults.standard.setValue(Date().addingTimeInterval(TimeInterval(result.expires_in)), forKey: "expirationDate")
+    }
+    public func signOut(completion: (Bool) -> Void) {
+        UserDefaults.standard.setValue(nil, forKey: "access_token")
+        
+        UserDefaults.standard.setValue(nil, forKey: "refresh_token")
+        
+        UserDefaults.standard.setValue(nil, forKey: "expirationDate")
+        
+        completion(true)
     }
 }
