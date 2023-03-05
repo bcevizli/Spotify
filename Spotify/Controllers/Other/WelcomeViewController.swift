@@ -66,7 +66,7 @@ class WelcomeViewController: UIViewController {
         overlayView.frame = view.bounds
         signInButton.frame = CGRect(x: 20, y: view.height-50-view.safeAreaInsets.bottom, width: view.width-40, height: 50)
         
-        logoImageView.frame = CGRect(x: (view.width-120)/2, y: 0, width: (view.height-350)/2, height: 120)
+        logoImageView.frame = CGRect(x: (view.width-120)/2, y: (view.height-350)/2, width: 120, height: 120)
         label.frame = CGRect(x: 30, y: logoImageView.bottom+30, width: view.width-60, height: 150)
     }
 
