@@ -69,6 +69,7 @@
 		EAFBBD3929B24EFE00CA32FE /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBBD3829B24EFE00CA32FE /* LibraryToggleView.swift */; };
 		EAFBBD3B29B2776900CA32FE /* LibraryPlaylistsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBBD3A29B2776900CA32FE /* LibraryPlaylistsResponse.swift */; };
 		EAFBBD3D29B2799200CA32FE /* ActionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBBD3C29B2799200CA32FE /* ActionLabelView.swift */; };
+		EAFBBD3F29B3D63300CA32FE /* LibraryAlbumsRepsonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBBD3E29B3D63300CA32FE /* LibraryAlbumsRepsonse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +139,7 @@
 		EAFBBD3829B24EFE00CA32FE /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
 		EAFBBD3A29B2776900CA32FE /* LibraryPlaylistsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibraryPlaylistsResponse.swift; path = ../../../../Documents/LibraryPlaylistsResponse.swift; sourceTree = "<group>"; };
 		EAFBBD3C29B2799200CA32FE /* ActionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelView.swift; sourceTree = "<group>"; };
+		EAFBBD3E29B3D63300CA32FE /* LibraryAlbumsRepsonse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsRepsonse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				EA3B64F129AE4AA90017D031 /* SearchResultResponse.swift */,
 				EA3B64F329AE4CCC0017D031 /* SearchResult.swift */,
 				EAFBBD3A29B2776900CA32FE /* LibraryPlaylistsResponse.swift */,
+				EAFBBD3E29B3D63300CA32FE /* LibraryAlbumsRepsonse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 			files = (
 				EA5D80CF299B8DC7003A3E46 /* SearchViewController.swift in Sources */,
 				EAAA1F5429AD1428000EF8A6 /* PlaylistDetailsResponse.swift in Sources */,
+				EAFBBD3F29B3D63300CA32FE /* LibraryAlbumsRepsonse.swift in Sources */,
 				EA5D80E9299B8F92003A3E46 /* Playlist.swift in Sources */,
 				EA5D80E3299B8F0A003A3E46 /* AuthManager.swift in Sources */,
 				EAFBBD3929B24EFE00CA32FE /* LibraryToggleView.swift in Sources */,
